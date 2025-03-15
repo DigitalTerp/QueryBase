@@ -2,31 +2,19 @@ body, html {
     padding: 0;
     margin: 0;
     font-family: 'Lucida Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 /* HEADER */
 .header {
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #06165f 0%, #3c00bc 100%);
+    padding: 10px 20px;
     background: linear-gradient(90deg, #06165f 0%, #3c00bc 100%);
     color: #fff;
-}
-
-.header__inner {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 20px;
-    margin: auto;
-    max-width: 1200px;
-    gap: 1rem;
-}
-
-@media screen and (min-width: 385px) {
-    .header__inner {
-        justify-content: space-between;
-        padding: 0px 20px;
-    }
 }
 
 .header__logo {
@@ -110,6 +98,7 @@ body, html {
     align-items: center;
     margin: 80px auto;
     max-width: 1200px;
+    margin: 80px auto;
 }
 .faq__list {
     display: flex;
